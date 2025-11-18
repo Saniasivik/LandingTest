@@ -21,6 +21,7 @@ SITES_TO_TEST = [
 
 bot = Bot(token=TELEGRAM_BOT_TOKEN)
 
+
 def send_telegram(text: str, photo_path: str = None):
     try:
         if photo_path:
