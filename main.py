@@ -31,6 +31,7 @@ def send_telegram(text: str, photo_path: str = None):
     except Exception as e:
         print(f"Telegram error: {e}")
 
+
 def dump_page_debug(driver, prefix="login"):
     driver.save_screenshot(f"{prefix}_debug.png")
     with open(f"{prefix}_debug.html", "w", encoding="utf-8") as f:
